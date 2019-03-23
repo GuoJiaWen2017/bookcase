@@ -17,7 +17,7 @@
 
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
 
->  ![效果预览](https://raw.githubusercontent.com/GuoJiaWen2017/bookcase/master/public/preview.png)
+>  ![效果预览](https://raw.githubusercontent.com/GuoJiaWen2017/bookcase/master/preview.png)
 
 ### 技术栈
 
