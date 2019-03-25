@@ -17,7 +17,11 @@
 
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
 
+效果预览
 >  ![效果预览](https://raw.githubusercontent.com/GuoJiaWen2017/bookcase/master/preview.png)
+
+注：只能点击如下图书方可有打开书本的特效
+>  ![效果预览](https://raw.githubusercontent.com/GuoJiaWen2017/bookcase/master/click.png)
 
 ### 技术栈
 
