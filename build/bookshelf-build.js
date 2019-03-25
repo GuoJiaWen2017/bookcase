@@ -5483,7 +5483,7 @@ define('dat/mahog/SpiralShelf',[
 
 });
 define('text!dat/mahog/pre.html', function () { return '<h6>You are currently looking:</h6>';});
-define('text!dat/mahog/post.html', function () { return '<a href="#">Browse Subjects</a>';});
+define('text!dat/mahog/post.html', function () { return '<a href="#">浏览分类</a>';});
 
 define('dat/mahog/DomLabelManager',[
   'dat/mahog/params',
@@ -5647,7 +5647,7 @@ define('dat/mahog/DomLabelManager',[
           })
           .appendTo($dom)
           .bind('mouseover mouseenter', function() {
-            $ul.find('.active').html('Browse subjects');
+            $ul.find('.active').html('浏览分类');
           })
           .bind('mouseout mouseleave', function() {
             var $li = $ul.find('.active');
@@ -5720,7 +5720,7 @@ define('dat/mahog/Genre2DOverlay',[
 
     // Set defaults here.
     var header = '';
-    var slogan = '<h1>Choose a Subject:</h1><div class=\'decoration two-thirds\'></div>';
+    var slogan = '<h1>选择一个类别:</h1><div class=\'decoration two-thirds\'></div>';
     var footer = '<footer>The helix includes ' + CONFIG.count + ' books, and was last updated on September 19, 2011.</footer>';
 
     if (urlArgs['installation'] !== undefined) {
