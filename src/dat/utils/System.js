@@ -46,7 +46,7 @@ define([
     localStorage: supports(localStorage.getItem),
     file: !!window.File && !!window.FileReader && !!window.FileList && !!window.Blob,
     fileSystem: !!window.requestFileSystem,
-    requestAnimationFrame: !!window.mozRequestAnimationFrame || !!window.webkitRequestAnimationFrame || !!window.oRequestAnimationFrame || !!window.msRequestAnimationFrame,
+    requestAnimationFrame: !!window.requestAnimationFrame || !!window.mozRequestAnimationFrame || !!window.webkitRequestAnimationFrame || !!window.oRequestAnimationFrame || !!window.msRequestAnimationFrame,
     sessionStorage: supports(sessionStorage.getItem),
     webgl: !!window.WebGLRenderingContext && expWebGl,
     worker: !!window.Worker

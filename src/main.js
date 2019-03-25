@@ -1,6 +1,6 @@
 require({
   paths: {
-    'jquery': 'third-party/jquery.1.6.2.min',
+    'jquery': 'third-party/jquery-1.8.3.min',
     'order': 'third-party/requirejs/order',
     'text': 'third-party/requirejs/text',
     'three': 'third-party/three/build/Three',
@@ -45,31 +45,6 @@ require([
 
     makeSelectable(document.body, false);
 
-    if (urlArgs['installation'] === undefined && urlArgs['installation_debug'] === undefined) {
-      // add chrome experiment logo
-      $('<div class="shout-out"><a href="http://www.chromeexperiments.com/detail/webgl-bookcase/" target="_blank"><img src="textures/ui/ce.png" alt="This is a Chrome Experiment."/></a></div>')
-          .css({
-            position: 'fixed',
-            display: 'none',
-            bottom: 0,
-            left: 0,
-            zIndex: 1002
-          })
-          .appendTo('body')
-          .fadeIn();
-
-      $('<div class="legal"><a href="http://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a> <a href="http://www.google.com/intl/en/policies/terms/" target="_blank">Terms of Service</a>')
-        .css({
-          position: 'fixed',
-          display: 'none',
-          bottom: 0,
-          right: 0,
-          zIndex: 1002
-        })
-        .appendTo('body')
-        .fadeIn();
-    }
-
     if (system.supports.webgl) {
 
       showMessage(splashHTML, function() {
@@ -86,7 +61,7 @@ require([
         if (DEBUG) {
              require(['dat/mahog/Bookshelf'], gogoPowerBookshelf);
         } else {
-          require(['../build/bookshelf-build.min'], function() {
+          require(['../build/bookshelf-build'], function() {
 
               var timer = setInterval(function() {
                 try {
